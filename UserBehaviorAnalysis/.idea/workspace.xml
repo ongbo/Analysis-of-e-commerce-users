@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="180c3020-5ee4-43b2-9b2a-8c98c1217794" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ongbo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginFailDetect/LoginFailDetect.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginFailDetect/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginFailDetect/src/main/scala/com/ongbo/LoginFail.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlinkDemo/src/main/scala/flinkscala/Transform/connectUnionComap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../FlinkDemo/src/main/scala/flinkscala/Transform/connectUnionComap.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlinkDemo/src/main/scala/flinkscala/Transform/transformationTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../FlinkDemo/src/main/scala/flinkscala/Transform/transformationTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/HotItems.scala" beforeDir="false" afterPath="$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/HotItems.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,13 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MarketAnalysis/src/main/scala/com/ongbo/market/AppMarketingByChannel.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/HotItems.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="338">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
               <folding>
-                <element signature="e#26#51#0" expanded="true" />
+                <element signature="e#31#56#0" expanded="true" />
+                <element signature="e#4782#5121#0" />
               </folding>
             </state>
           </provider>
@@ -46,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/UvWithBloom.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+            <state relative-caret-position="127">
+              <caret line="42" column="118" selection-start-line="42" selection-start-column="118" selection-end-line="42" selection-end-column="118" />
               <folding>
                 <element signature="e#40#97#0" expanded="true" />
               </folding>
@@ -56,31 +51,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoginFailDetect/pom.xml">
+        <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/KeyedStream.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LoginFailDetect/src/main/scala/com/ongbo/LoginFail.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="e#19#92#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="245">
+              <caret line="268" column="16" lean-forward="true" selection-start-line="268" selection-start-column="16" selection-end-line="268" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/NetWorkFlow.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="966">
+              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="e#40#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,6 +80,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>keyby</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -102,7 +93,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/HotItemAnalysis/pom.xml" />
-        <option value="$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/HotItems.scala" />
         <option value="$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/scriptFile.scala" />
         <option value="$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/NetWorkFlow.scala" />
         <option value="$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/PageVies.scala" />
@@ -114,6 +104,7 @@
         <option value="$PROJECT_DIR$/MarketAnalysis/src/main/scala/com/ongbo/market/AppMarketingByChannel.scala" />
         <option value="$PROJECT_DIR$/LoginFailDetect/pom.xml" />
         <option value="$PROJECT_DIR$/LoginFailDetect/src/main/scala/com/ongbo/LoginFail.scala" />
+        <option value="$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/HotItems.scala" />
       </list>
     </option>
   </component>
@@ -140,10 +131,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="624" />
-    <option name="y" value="76" />
-    <option name="width" value="1207" />
-    <option name="height" value="791" />
+    <option name="x" value="268" />
+    <option name="y" value="131" />
+    <option name="width" value="1556" />
+    <option name="height" value="859" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -152,7 +143,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,25 +153,25 @@
             <path>
               <item name="UserBehaviorAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="UserBehaviorAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginFailDetect" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlowAnalysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UserBehaviorAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="UserBehaviorAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginFailDetect" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlowAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UserBehaviorAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="UserBehaviorAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginFailDetect" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlowAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UserBehaviorAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="UserBehaviorAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginFailDetect" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlowAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
@@ -189,7 +179,7 @@
             <path>
               <item name="UserBehaviorAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="UserBehaviorAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginFailDetect" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlowAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
@@ -198,17 +188,29 @@
             <path>
               <item name="UserBehaviorAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="UserBehaviorAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginFailDetect" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlowAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ongbo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UserBehaviorAnalysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UserBehaviorAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlowAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ongbo" type="462c0819:PsiDirectoryNode" />
+              <item name="NetWorkFlow_Analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,17 +333,27 @@
       <workItem from="1582769955343" duration="10765000" />
       <workItem from="1582804353285" duration="1319000" />
       <workItem from="1582806434849" duration="1835000" />
-      <workItem from="1582872062774" duration="3754000" />
+      <workItem from="1582872062774" duration="6539000" />
+      <workItem from="1582955554890" duration="2799000" />
     </task>
+    <task id="LOCAL-00001" summary="LoginFailDetect Flink">
+      <created>1582879669779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582879669779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30161000" />
+    <option name="totallyTimeSpent" value="35745000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="624" y="76" width="1207" height="791" extended-state="0" />
+    <frame x="268" y="131" width="1556" height="859" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19055794" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -379,6 +391,10 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LoginFailDetect Flink" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginFailDetect Flink" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/function/WindowFunction.scala">
@@ -418,20 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/KeyedStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="268" column="17" selection-start-line="268" selection-start-column="17" selection-end-line="268" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/WindowedStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HotItemAnalysis/src/main/resources/UserBehavior.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -439,45 +441,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/NetWorkFlow.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <element signature="e#40#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/HotItems.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-          <folding>
-            <element signature="e#31#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/resources/UserBehavior.csv">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/PageVies.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/UniqueView.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#41#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HotItemAnalysis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -500,37 +465,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/DataStream.scala">
+    <entry file="file://$PROJECT_DIR$/LoginFailDetect/src/main/scala/com/ongbo/LoginFail.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="892" column="6" selection-start-line="892" selection-start-column="6" selection-end-line="892" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MarketAnalysis/src/main/scala/com/ongbo/market/AppMarketingByChannel.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        <state relative-caret-position="798">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
-            <element signature="e#26#51#0" expanded="true" />
+            <element signature="e#19#92#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/UvWithBloom.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
-          <folding>
-            <element signature="e#40#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -541,12 +482,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoginFailDetect/src/main/scala/com/ongbo/LoginFail.scala">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="222">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarketAnalysis/src/main/scala/com/ongbo/market/AppMarketingByChannel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
-            <element signature="e#19#92#0" expanded="true" />
+            <element signature="e#26#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/DataStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3801">
+          <caret line="294" column="28" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/datastream/KeyedStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="158" column="43" selection-start-line="158" selection-start-column="43" selection-end-line="158" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/PageVies.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/UniqueView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="e#41#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/NetWorkFlow.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#40#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetWorkFlowAnalysis/src/main/scala/com/ongbo/NetWorkFlow_Analysis/UvWithBloom.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="42" column="118" selection-start-line="42" selection-start-column="118" selection-end-line="42" selection-end-column="118" />
+          <folding>
+            <element signature="e#40#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/KeyedStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="268" column="16" lean-forward="true" selection-start-line="268" selection-start-column="16" selection-end-line="268" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Respo/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/WindowedStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HotItemAnalysis/src/main/scala/com/ongbo/hotAnalysis/HotItems.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#31#56#0" expanded="true" />
+            <element signature="e#4782#5121#0" />
           </folding>
         </state>
       </provider>

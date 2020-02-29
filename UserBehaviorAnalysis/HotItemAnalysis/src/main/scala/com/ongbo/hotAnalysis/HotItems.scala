@@ -35,7 +35,7 @@ object HotItems {
     val dataStream = env.readTextFile("/Users/ongbo/Maven/bin/UserBehaviorAnalysis/HotItemAnalysis/src/main/resources/UserBehavior.csv")
       .map(data =>{
         val dataArray = data.split(",")
-        NetWorkFlow_Analysis.UserBehavior(dataArray(0).trim.toLong,dataArray(1).trim.toLong,dataArray(2).trim.toInt,dataArray(3).trim,dataArray(4).trim.toLong)
+        UserBehavior(dataArray(0).trim.toLong,dataArray(1).trim.toLong,dataArray(2).trim.toInt,dataArray(3).trim,dataArray(4).trim.toLong)
       })
       .assignAscendingTimestamps(_.timestamp * 1000L)
 
@@ -49,8 +49,8 @@ object HotItems {
       .timeWindow(Time.hours(1), Time.minutes(5))
       //窗口聚合
       .aggregate(new CountAgg(), new WindowResult())
-      //按照窗口分组
-      .keyBy(_.windowEnd)
+      .keyBy(_.windowEnd)      //按照窗口分组
+
       .process(new TopNHotItems(10))
 
 
@@ -66,11 +66,11 @@ object HotItems {
 }
 
 /*自定义预聚合函数*/
-class CountAgg() extends AggregateFunction[NetWorkFlow_Analysis.UserBehavior, Long, Long]{
+class CountAgg() extends AggregateFunction[UserBehavior, Long, Long]{
   //累加器初始值
   override def createAccumulator(): Long = 0
   //每来一次就加一
-  override def add(in: NetWorkFlow_Analysis.UserBehavior, acc: Long): Long = acc+1
+  override def add(in: UserBehavior, acc: Long): Long = acc+1
   //
   override def getResult(acc: Long): Long = acc
 
