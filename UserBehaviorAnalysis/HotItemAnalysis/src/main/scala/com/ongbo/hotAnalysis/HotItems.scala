@@ -1,9 +1,10 @@
 package com.ongbo.hotAnalysis
 
 import java.sql.Timestamp
+import java.util.Properties
 
-import com.ongbo.NetWorkFlow_Analysis
 import org.apache.flink.api.common.functions.AggregateFunction
+import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.api.common.state.{ListState, ListStateDescriptor}
 import org.apache.flink.api.java.tuple.Tuple
 import org.apache.flink.configuration.Configuration
@@ -13,6 +14,7 @@ import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.scala.function.WindowFunction
 import org.apache.flink.streaming.api.windowing.time.Time
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer
 import org.apache.flink.util.Collector
 
 import scala.collection.mutable.ListBuffer
@@ -32,10 +34,22 @@ object HotItems {
     //设置为事件事件
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
     //2:读取数据
-    val dataStream = env.readTextFile("/Users/ongbo/Maven/bin/UserBehaviorAnalysis/HotItemAnalysis/src/main/resources/UserBehavior.csv")
+
+    /*kafka源*/
+    val properties = new Properties()
+    properties.setProperty("bootstrap.servers","114.116.219.197:5008,114.116.220.98:5008,114.116.199.154:5008")
+    properties.setProperty("group.id","web-consumer-group")
+    properties.setProperty("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer")
+    properties.setProperty("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer")
+    properties.setProperty("auto.offset.reset","latest")
+    val dataStream = env.addSource(new FlinkKafkaConsumer[String]("weblog", new SimpleStringSchema(),properties))
+//    val dataStream = env.readTextFile("/Users/ongbo/Maven/bin/UserBehaviorAnalysis/HotItemAnalysis/src/main/resources/UserBehavior.csv")
       .map(data =>{
+        System.out.println("data:"+data)
         val dataArray = data.split(",")
-        UserBehavior(dataArray(0).trim.toLong,dataArray(1).trim.toLong,dataArray(2).trim.toInt,dataArray(3).trim,dataArray(4).trim.toLong)
+//        if(dataArray(0).equals("ij"))
+        UserBehavior(dataArray(0).trim.toLong, dataArray(1).trim.toLong, dataArray(2).trim.toInt, dataArray(3).trim, dataArray(4).trim.toLong)
+
       })
       .assignAscendingTimestamps(_.timestamp * 1000L)
 
@@ -46,8 +60,8 @@ object HotItems {
       //先对itemID进行分组
       .keyBy(_.itemId)
       //然后设置timeWindow，size为1小时，步长为5分钟的滑动窗口
-      .timeWindow(Time.hours(1), Time.minutes(5))
-      //窗口聚合
+      .timeWindow(Time.seconds(20), Time.seconds(10))
+      //窗口聚合，按道理说应该不用窗口聚合，但是因为达到的数据可能时间顺序会扰乱，所以聚合后要keyby
       .aggregate(new CountAgg(), new WindowResult())
       .keyBy(_.windowEnd)      //按照窗口分组
 
@@ -134,7 +148,7 @@ class TopNHotItems(topsize: Int) extends KeyedProcessFunction[Long, ItemViewCoun
 
 
 /*自定义预聚合函数计算平均数*/
-class AverageAgg() extends AggregateFunction[NetWorkFlow_Analysis.UserBehavior, (Long,Int), Double]{
+class AverageAgg() extends AggregateFunction[UserBehavior, (Long,Int), Double]{
   override def createAccumulator(): (Long, Int) = (0L,0)
 
   override def add(in: UserBehavior, acc: (Long, Int)): (Long, Int) = (acc._1+in.timestamp, acc._2+1)
